@@ -5,8 +5,7 @@ import Balance from "./components/Balance.jsx";
 function App() {
 
     return (
-
-        <div>
+        <div className={'container'}>
             <Balance/>
             <Operation/>
         </div>
