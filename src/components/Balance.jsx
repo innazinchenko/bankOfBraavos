@@ -1,12 +1,14 @@
 import {useSelector} from "react-redux";
 
 const Balance = () => {
-    const balance = useSelector(state => state.bank.balance);
+    const balance = useSelector(state => state.balance);
+    const quote = useSelector(state => state.quote);
 
     return (
-        <div>
-            <h1 className={'text-center text-uppercase'}>Iron Bank of Braavos</h1>
-            <h2 className={'text-center text-uppercase'}>Balance = {balance}</h2>
+        <div className={'text-center text-uppercase'}>
+            <h1>Iron Bank of Braavos</h1>
+            <h3>{quote}</h3>
+            <h2>Balance = {balance}</h2>
         </div>
     );
 };

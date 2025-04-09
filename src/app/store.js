@@ -1,8 +1,9 @@
 import {configureStore} from "@reduxjs/toolkit";
-import bankReducer from "../features/bankSlice.js";
+import balance from "../features/balanceSlice.js";
+import quote from "../features/quote/quoteSlice.js";
 
 export const store = configureStore({
     reducer: {
-        bank: bankReducer
-    }
-});
+        balance, quote
+    },
+})
